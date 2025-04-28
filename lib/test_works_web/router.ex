@@ -14,7 +14,7 @@ defmodule TestWorksWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", TestWorksWeb do
+  scope "/designer", TestWorksWeb do
     pipe_through :browser
 
     get "/", PageController, :home
